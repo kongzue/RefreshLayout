@@ -1,6 +1,7 @@
 # RefreshLayout
-基于SwipeRefreshLayout的改良版
+基于Google的v4支持库中原生刷新组件SwipeRefreshLayout的改良版
 
+### 来源与修改
 原版为 @zhangtian6691844 的《实现滑动到底部时上拉加载更多的功能的listview》：http://blog.csdn.net/zhangtian6691844/article/details/52346160
 
 但其存在Bug，例如：
@@ -23,7 +24,7 @@ if (mOnLoadListener != null && !isLoading && !isRefreshing())
 以增加其在下拉刷新的过程中不能再上拉加载操作的互斥条件。
 
 
-使用Demo：
+### 使用Demo
 ```
         <com.kongzue.example.view.RefreshLayout
             android:id="@+id/refreshLayout"
