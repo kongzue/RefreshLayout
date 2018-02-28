@@ -21,3 +21,22 @@ if (mOnLoadListener != null)
 if (mOnLoadListener != null && !isLoading && !isRefreshing()) 
 ```
 以增加其在下拉刷新的过程中不能再上拉加载操作的互斥条件。
+
+
+使用Demo：
+```
+        <com.kongzue.example.view.RefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="10dp"
+                android:clipToPadding="false"></ListView>
+
+        </com.paac.driver.view.RefreshLayout>
+```
